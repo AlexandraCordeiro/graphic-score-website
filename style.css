@@ -185,7 +185,7 @@ sheet-music {
     }
 
     .inner-text {
-        font-size: 13px;
+        font-size: 15px;
         font-family: 'Vidaloka', serif;
         margin-top: 2vh;
         position: absolute;
@@ -198,7 +198,7 @@ sheet-music {
     }
     
     .inner-text-2 {
-        font-size: 13px;
+        font-size: 15px;
         font-family: 'Vidaloka', serif;
         margin-top: 2vh;
         position: absolute;
