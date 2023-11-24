@@ -324,7 +324,12 @@ document.addEventListener("DOMContentLoaded", function() {
     
         }
         
+        function refreshDOM() {
+            location.reload(true);
+        }
+
         function draw() {
+            window.addEventListener('resize', refreshDOM);
             downloadImage()
             createCircleStroke("score")
             createRandomCircle("score", "large", "staff1")
