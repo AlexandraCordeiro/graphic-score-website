@@ -32,24 +32,25 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     
         function draggableMobile(divElement) {
-            let offsetX, offsetY
-            
+            let offsetX, offsetY;
+        
             const move = (e) => {
-                divElement.style.left = `${e.clientX - offsetX}px`;
-                divElement.style.top = `${e.clientY - offsetY}px`;
-            }
-            
+                e.preventDefault(); // Prevent default touch behavior (e.g., scrolling)
+                divElement.style.left = `${e.touches[0].clientX - offsetX}px`;
+                divElement.style.top = `${e.touches[0].clientY - offsetY}px`;
+            };
+        
             divElement.addEventListener("touchstart", (e) => {
-                offsetX = e.clientX - divElement.offsetLeft;
-                offsetY = e.clientY - divElement.offsetTop;
+                offsetX = e.touches[0].clientX - divElement.offsetLeft;
+                offsetY = e.touches[0].clientY - divElement.offsetTop;
                 document.addEventListener("touchmove", move);
-    
-            })
-    
+            });
+        
             document.addEventListener("touchend", () => {
                 document.removeEventListener("touchmove", move);
             });
         }
+        
     
     
         function downloadImage() {
