@@ -14,7 +14,8 @@ Personal information is arranged between the music staves, encouraging scrolling
 - Email
 Finally, visitors can download their graphic score.
 
-#Moodboard
+# Moodboard
+
 <center>
     <img src="/imgs/moodboard.svg">
 </center>
