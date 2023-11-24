@@ -12,6 +12,7 @@ Personal information is arranged between the music staves, encouraging scrolling
 - Spotify: directs to a curated list of Jazz, Classical, and Bossa Nova playlists.
 - LinkedIn
 - Email
+  
 Finally, visitors can download their graphic score.
 
 # Moodboard
