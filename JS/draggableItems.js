@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const header = document.getElementById("header")
         const marginWidth = header.getBoundingClientRect().left
         const marginTop = header.getBoundingClientRect().height + 10
-    
+        let lastWindowWidth = window.innerWidth;
+        let lastWindowHeight = window.innerHeight;
     
         function randomNumber(min, max) {
             return parseInt(Math.random() * (max - min) + min);
@@ -325,7 +326,17 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         function refreshDOM() {
-            location.reload(true);
+            // Check if both width and height have changed significantly
+            if (
+                Math.abs(window.innerWidth - lastWindowWidth) > 50 ||
+                Math.abs(window.innerHeight - lastWindowHeight) > 50
+            ) {
+                location.reload();
+            }
+
+            // Update last window dimensions
+            lastWindowWidth = window.innerWidth;
+            lastWindowHeight = window.innerHeight;
         }
 
         function draw() {
