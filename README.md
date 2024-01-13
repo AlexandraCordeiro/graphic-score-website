@@ -1,4 +1,4 @@
-# personal_website
+# graphic-score-website
 Project carried out as part of the Web Development course.
 The goal is to create a personal website with a strong emphasis on programming, creativity, and experimentation. 
 
