@@ -2,7 +2,7 @@
 Project carried out as part of the Web Development course.
 The goal is to create a personal website with a strong emphasis on programming, creativity, and experimentation. 
 
-- [link to website](https://alexandracordeiro.github.io/personal_website/)
+- [link to website](https://alexandracordeiro.github.io/graphic-score-website/) 
 
 # Concept
 The premise for this website is the creation of a graphic score.
